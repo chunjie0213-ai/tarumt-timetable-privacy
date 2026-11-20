@@ -10,7 +10,7 @@
   <main>
     <p><a href="./">TAR UMT Timetable</a></p>
     <h1>Privacy policy</h1>
-    <p class="meta">Last updated 20 November 2026</p>
+    <p class="meta">Last updated 20 November 2026 (Drive access added)</p>
 
     <h2>Who uses it</h2>
     <p>This tool is used only by its owner, for the owner's own Google account. No one else signs in to it.</p>
@@ -21,8 +21,14 @@
       <li>the list of courses (<code>classroom.courses.readonly</code>)</li>
       <li>coursework and the owner's own submission status (<code>classroom.coursework.me.readonly</code>)</li>
       <li>course announcements (<code>classroom.announcements.readonly</code>)</li>
+      <li>files posted in Classwork (<code>classroom.courseworkmaterials.readonly</code>)</li>
+      <li>read-only Google Drive access (<code>drive.readonly</code>), used to open schedule files that
+        teachers attach in Classwork</li>
     </ul>
-    <p>It cannot create, change, submit or delete anything in Google Classroom.</p>
+    <p>Although Google's Drive permission covers every file the owner can see, the tool only opens files
+      attached to the current semester's Classroom courses whose name marks them as a schedule
+      (for example "FYP Deadline"). It does not list, search or open any other Drive file.</p>
+    <p>It cannot create, change, submit or delete anything in Google Classroom or Google Drive.</p>
 
     <h2>What it does with it</h2>
     <p>It finds upcoming tests, deadlines and class changes and sends a short summary to the owner's own
@@ -30,8 +36,9 @@
       AI models.</p>
 
     <h2>What it keeps</h2>
-    <p>Only what it needs to notice changes: the IDs of announcements already seen and the owner's class
-      timetable, kept in the owner's private GitHub Actions cache. Course content is not stored. The
+    <p>Only what it needs to notice changes: the IDs of announcements already seen, the owner's class
+      timetable, and the dates and task names read from schedule files, kept in the owner's private
+      GitHub Actions cache. Other course content and file contents are not stored. The
       sign-in token is kept as an encrypted secret in the owner's private repository.</p>
 
     <h2>Stopping access</h2>
