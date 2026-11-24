@@ -10,10 +10,10 @@
   <main>
     <p><a href="./">TAR UMT Assistant Lab</a></p>
     <h1>Privacy policy</h1>
-    <p class="meta">Last updated 23 November 2026</p>
+    <p class="meta">Last updated 24 November 2026</p>
 
     <h2>Who runs it</h2>
-    <p>One TAR UMT student (the operator) runs this test on their own computer. It is used only by
+    <p>One TAR UMT student (the operator) runs this test, on servers rented from Render. It is used only by
       students who start the Telegram bot themselves.</p>
 
     <h2>What it keeps</h2>
@@ -28,7 +28,10 @@
       <li>If you create an AI link: only a one-way hash of the link's key, when it was made and last used.
         The operator cannot see your link.</li>
     </ul>
-    <p>It is stored in a database on the operator's computer. The operator also looks at counts only
+    <p>It is stored in a Supabase database in Singapore; the app itself runs on Render. Both store or process
+      the data only to run this service. So that reminders can be sent on time, the titles, due dates and hand-in status
+      of your upcoming assignments, and the titles and text of new Classroom posts waiting to be sent to you, are
+      kept there and replaced as Classroom is read again. Messages reach you through Telegram. The operator looks at counts only
       (for example, how many students finished setup), never at individual students' data.</p>
 
     <h2>What it reads from Google</h2>
@@ -40,8 +43,7 @@
       <li>Classwork materials (<code>classroom.courseworkmaterials.readonly</code>)</li>
     </ul>
     <p>It does not read Google Drive. It cannot create, change, submit or delete anything in Google
-      Classroom. Assignment titles and due dates are read when you or your AI assistant ask for them
-      and are not stored.</p>
+      Classroom.</p>
 
     <h2>Your AI link</h2>
     <p>If you create a private link and add it to an AI assistant (for example Claude), that assistant
